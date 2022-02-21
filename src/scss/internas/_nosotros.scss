@@ -1,0 +1,30 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.contenido-nosotros {
+  @include desktop {
+    @include grid(2, 2rem);
+  }
+
+  .imagen {
+    margin-bottom: 5rem;
+    @include desktop {
+      margin: 0 2rem 0 0;
+    }
+    img {
+      transform: rotate(-6deg);
+      border: 3rem solid $blanco;
+      box-shadow: 9px 10px 5px -7px rgb(0 0 0 / 0.35);
+    }
+  }
+
+  .texto {
+    text-align: left;
+    blockquote {
+      margin: 0;
+      padding: 1rem;
+      border-left: 0.5rem solid $primario;
+      font-size: 2rem;
+    }
+  }
+}

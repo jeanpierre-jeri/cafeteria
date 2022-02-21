@@ -1,0 +1,13 @@
+@use 'base/variables' as *;
+@use 'base/mixins' as *;
+
+.contenido-principal {
+  background-color: $blanco;
+  padding: 5rem 2rem;
+
+  @include tablet {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
+  }
+}
